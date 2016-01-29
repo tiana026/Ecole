@@ -25,7 +25,7 @@ namespace Ecole.Models
         [Required(ErrorMessage = "Prenom requis")]
         public string Prenom { get; set; }
 
-        [Display(Name = "Nom Complet")]
+        [Display(Name = "Enseignant")]
         public string NomComplet
         {
             get

@@ -8,9 +8,12 @@ namespace Ecole.Models
     public class Periode
     {
         public int ID { get; set; }
-        public string Moyenne { get; set; }
+        public string NomPeriode { get; set; }
+        public float Moyenne { get; set; }
 
         //Clés étrangères
-        public virtual ICollection<Note> Notes { get; set; }
+        public virtual Note Note { get; set; }
+        public int NoteID { get; set; }
+        public virtual ICollection<Travail> Travails { get; set; }
     }
 }

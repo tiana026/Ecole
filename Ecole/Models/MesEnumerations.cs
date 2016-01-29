@@ -13,6 +13,16 @@ namespace Ecole.Models
         [Display(Name = "Feminin")]
         F
     }
+
+    public enum TypeTravail
+    {
+        [Display(Name = "Intérrogation")]
+        Interrogation,
+        [Display(Name = "Travail Pratique")]
+        TP,
+        [Display(Name = "Devoir à domicil")]
+        Devoir
+    }
     public class MesEnumerations
     {        
     }

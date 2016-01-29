@@ -169,10 +169,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AnneesController.cs" />
+    <Compile Include="Controllers\ElevesController.cs" />
     <Compile Include="Controllers\EnseignantsController.cs" />
     <Compile Include="Controllers\GradesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MatieresController.cs" />
+    <Compile Include="Controllers\ParentsController.cs" />
     <Compile Include="DAL\EcoleContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -184,6 +187,14 @@
     <Compile Include="Migrations\201601211238212_002.cs" />
     <Compile Include="Migrations\201601211238212_002.Designer.cs">
       <DependentUpon>201601211238212_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601211349488_003.cs" />
+    <Compile Include="Migrations\201601211349488_003.Designer.cs">
+      <DependentUpon>201601211349488_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601281306132_004.cs" />
+    <Compile Include="Migrations\201601281306132_004.Designer.cs">
+      <DependentUpon>201601281306132_004.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -199,6 +210,7 @@
     <Compile Include="Models\Note.cs" />
     <Compile Include="Models\Parent.cs" />
     <Compile Include="Models\Periode.cs" />
+    <Compile Include="Models\Travail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -274,6 +286,21 @@
     <Content Include="Views\Enseignants\Details.cshtml" />
     <Content Include="Views\Enseignants\Edit.cshtml" />
     <Content Include="Views\Enseignants\Index.cshtml" />
+    <Content Include="Views\Matieres\Create.cshtml" />
+    <Content Include="Views\Matieres\Delete.cshtml" />
+    <Content Include="Views\Matieres\Details.cshtml" />
+    <Content Include="Views\Matieres\Edit.cshtml" />
+    <Content Include="Views\Matieres\Index.cshtml" />
+    <Content Include="Views\Parents\Create.cshtml" />
+    <Content Include="Views\Parents\Delete.cshtml" />
+    <Content Include="Views\Parents\Details.cshtml" />
+    <Content Include="Views\Parents\Edit.cshtml" />
+    <Content Include="Views\Parents\Index.cshtml" />
+    <Content Include="Views\Eleves\Create.cshtml" />
+    <Content Include="Views\Eleves\Delete.cshtml" />
+    <Content Include="Views\Eleves\Details.cshtml" />
+    <Content Include="Views\Eleves\Edit.cshtml" />
+    <Content Include="Views\Eleves\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -292,6 +319,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601211238212_002.resx">
       <DependentUpon>201601211238212_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601211349488_003.resx">
+      <DependentUpon>201601211349488_003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601281306132_004.resx">
+      <DependentUpon>201601281306132_004.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

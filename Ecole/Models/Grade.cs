@@ -13,7 +13,7 @@ namespace Ecole.Models
 
         //Clés étrangères
         public virtual ICollection<Eleve> Eleves { get; set; }
-        //public virtual ICollection<Matiere> Matieres { get; set; }
+        public virtual ICollection<Matiere> Matieres { get; set; }
         public virtual Annee Annee { get; set; }
         public int AnneeID { get; set; }
     }

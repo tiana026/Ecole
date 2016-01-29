@@ -15,7 +15,7 @@ namespace Ecole.Models
         public virtual ICollection<Note> Notes { get; set; }
         public virtual Enseignant Enseignant { get; set; }
         public int EnseignantID { get; set; }
-        //public virtual Grade Grade { get; set; }
-        //public int GradeID { get; set; }
+        public virtual Grade Grade { get; set; }
+        public int GradeID { get; set; }
     }
 }

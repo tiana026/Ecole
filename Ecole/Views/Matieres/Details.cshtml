@@ -1,0 +1,55 @@
+﻿@model Ecole.Models.Matiere
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Matiere : @Html.DisplayFor(model => model.Intitule)</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Enseignant.NomComplet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enseignant.NomComplet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Grade.Promotion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grade.Promotion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Intitule)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Intitule)
+        </dd>
+
+        <h4>Elèves inscrits</h4>
+
+        @foreach (var eleve in Model.Grade.Eleves)
+        {
+            <dt>
+                @Html.DisplayNameFor(x => eleve.NomComplet)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(x => eleve.NomComplet)
+            </dd>
+        }
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

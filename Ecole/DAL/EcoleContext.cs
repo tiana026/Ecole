@@ -15,6 +15,7 @@ namespace Ecole.DAL
         public DbSet<Eleve> Eleves { get; set; }
         public DbSet<Note> Notes { get; set; }
         public DbSet<Periode> Periodes { get; set; }
+        public DbSet<Travail> Travails { get; set; }
         public DbSet<Matiere> Matieres { get; set; }
         public DbSet<Enseignant> Enseignants { get; set; }
         public DbSet<Grade> Grades { get; set; }
