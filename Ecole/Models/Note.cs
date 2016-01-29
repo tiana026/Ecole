@@ -16,5 +16,6 @@ namespace Ecole.Models
         public virtual Matiere Matiere { get; set; }
         public int MatiereID { get; set; }
         public virtual ICollection<Periode> Periodes { get; set; }
+        public virtual ICollection<Travail> Travails { get; set; }
     }
 }

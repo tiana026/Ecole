@@ -176,6 +176,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MatieresController.cs" />
     <Compile Include="Controllers\ParentsController.cs" />
+    <Compile Include="Controllers\PeriodesController.cs" />
     <Compile Include="DAL\EcoleContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -196,6 +197,14 @@
     <Compile Include="Migrations\201601281306132_004.Designer.cs">
       <DependentUpon>201601281306132_004.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601291238084_005.cs" />
+    <Compile Include="Migrations\201601291238084_005.Designer.cs">
+      <DependentUpon>201601291238084_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601291300025_006_AjoutMoyenne.cs" />
+    <Compile Include="Migrations\201601291300025_006_AjoutMoyenne.Designer.cs">
+      <DependentUpon>201601291300025_006_AjoutMoyenne.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Annee.cs" />
@@ -207,6 +216,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Matiere.cs" />
     <Compile Include="Models\MesEnumerations.cs" />
+    <Compile Include="Models\Moyenne.cs" />
     <Compile Include="Models\Note.cs" />
     <Compile Include="Models\Parent.cs" />
     <Compile Include="Models\Periode.cs" />
@@ -301,6 +311,11 @@
     <Content Include="Views\Eleves\Details.cshtml" />
     <Content Include="Views\Eleves\Edit.cshtml" />
     <Content Include="Views\Eleves\Index.cshtml" />
+    <Content Include="Views\Periodes\Create.cshtml" />
+    <Content Include="Views\Periodes\Delete.cshtml" />
+    <Content Include="Views\Periodes\Details.cshtml" />
+    <Content Include="Views\Periodes\Edit.cshtml" />
+    <Content Include="Views\Periodes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -325,6 +340,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601281306132_004.resx">
       <DependentUpon>201601281306132_004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601291238084_005.resx">
+      <DependentUpon>201601291238084_005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601291300025_006_AjoutMoyenne.resx">
+      <DependentUpon>201601291300025_006_AjoutMoyenne.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

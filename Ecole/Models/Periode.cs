@@ -9,11 +9,11 @@ namespace Ecole.Models
     {
         public int ID { get; set; }
         public string NomPeriode { get; set; }
-        public float Moyenne { get; set; }
 
         //Clés étrangères
-        public virtual Note Note { get; set; }
-        public int NoteID { get; set; }
+        public virtual ICollection<Note> Notes { get; set; }
         public virtual ICollection<Travail> Travails { get; set; }
+        public virtual Moyenne Moyenne { get; set; }
+        public int MoyenneID { get; set; }
     }
 }
