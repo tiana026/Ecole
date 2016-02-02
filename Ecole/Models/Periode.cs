@@ -13,7 +13,7 @@ namespace Ecole.Models
         //Clés étrangères
         public virtual ICollection<Note> Notes { get; set; }
         public virtual ICollection<Travail> Travails { get; set; }
-        public virtual Moyenne Moyenne { get; set; }
-        public int MoyenneID { get; set; }
+        //public virtual Moyenne Moyenne { get; set; }
+        //public int MoyenneID { get; set; }
     }
 }

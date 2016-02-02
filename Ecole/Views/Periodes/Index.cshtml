@@ -14,9 +14,6 @@
         <th>
             @Html.DisplayNameFor(model => model.NomPeriode)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Moyenne)
-        </th>
         <th></th>
     </tr>
 
@@ -24,9 +21,6 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.NomPeriode)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Moyenne)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

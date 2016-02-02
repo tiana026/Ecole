@@ -205,6 +205,10 @@
     <Compile Include="Migrations\201601291300025_006_AjoutMoyenne.Designer.cs">
       <DependentUpon>201601291300025_006_AjoutMoyenne.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201602020855236_007_SuppressionClasseMoyenne.cs" />
+    <Compile Include="Migrations\201602020855236_007_SuppressionClasseMoyenne.Designer.cs">
+      <DependentUpon>201602020855236_007_SuppressionClasseMoyenne.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Annee.cs" />
@@ -346,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601291300025_006_AjoutMoyenne.resx">
       <DependentUpon>201601291300025_006_AjoutMoyenne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602020855236_007_SuppressionClasseMoyenne.resx">
+      <DependentUpon>201602020855236_007_SuppressionClasseMoyenne.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

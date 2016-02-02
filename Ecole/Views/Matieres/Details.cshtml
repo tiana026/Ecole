@@ -33,21 +33,35 @@
         <dd>
             @Html.DisplayFor(model => model.Intitule)
         </dd>
+    </dl>
 
         <h4>Elèves inscrits</h4>
 
-        @foreach (var eleve in Model.Grade.Eleves)
-        {
-            <dt>
-                @Html.DisplayNameFor(x => eleve.NomComplet)
-            </dt>
+        <table class="table">
+            <tr>
+                <th>
+                    Nom Complet
+                </th>
+                <th></th>
+            </tr>
 
-            <dd>
-                @Html.DisplayFor(x => eleve.NomComplet)
-            </dd>
-        }
+            @foreach (var eleve in Model.Grade.Eleves)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(x => eleve.NomComplet)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Modifier", "Edit", "Eleves", new { id = eleve.ID }, null) |
+                        @Html.ActionLink("Details", "Details", "Eleves", new { id = eleve.ID }, null) |
+                        @Html.ActionLink("Supprimer", "Delete", "Eleves", new { id = eleve.ID }, null)
+                    </td>
+                </tr>
+            }
 
-    </dl>
+        </table>
+
+
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |

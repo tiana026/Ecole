@@ -16,7 +16,7 @@ namespace Ecole.Models
         public int PeriodeID { get; set; }
         public virtual Note Note { get; set; }
         public int NoteID { get; set; }
-        public virtual Moyenne Moyenne { get; set; }
-        public int MoyenneID { get; set; }
+        //public virtual Moyenne Moyenne { get; set; }
+        //public int MoyenneID { get; set; }
     }
 }

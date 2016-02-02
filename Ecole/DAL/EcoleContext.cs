@@ -21,7 +21,7 @@ namespace Ecole.DAL
         public DbSet<Grade> Grades { get; set; }
         public DbSet<Annee> Annees { get; set; }
         public DbSet<Departement> Departements { get; set; }
-        public DbSet<Moyenne> Moyennes { get; set; }
+        //public DbSet<Moyenne> Moyennes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
